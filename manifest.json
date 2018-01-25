@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Real Time Google Analytics Tab Bubble",
+  "description": "Adds a tiny bubble to the Google Analytics favicon to show many active users are on site.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://analytics.google.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
